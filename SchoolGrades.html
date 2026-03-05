@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Grades</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:Poppins, sans-serif;
+    background:linear-gradient(135deg,#020617,#0f172a,#020617);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+}
+
+.student-info{
+    color:#00ffff;
+    font-family:Orbitron, sans-serif;
+    margin-bottom:20px;
+    text-align:left;
+}
+
+.student-info h2{
+    margin:5px 0;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    text-align:center;
+    color:white;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 25px rgba(0,255,255,0.3);
+}
+
+th, td{
+    padding:12px;
+    border:1px solid rgba(0,255,255,0.4);
+}
+
+thead{
+    background:rgba(0,255,255,0.1);
+}
+
+thead th{
+    font-family:Orbitron, sans-serif;
+    font-size:18px;
+    color:#00ffff;
+    text-shadow:0 0 8px #00ffff;
+}
+
+tbody tr:nth-child(even){
+    background:rgba(255,255,255,0.05);
+}
+
+tbody tr:hover{
+    background:rgba(0,255,255,0.15);
+}
+
+tfoot{
+    background:rgba(0,255,255,0.1);
+}
+
+tfoot th{
+    font-family:Orbitron, sans-serif;
+    color:#00ffff;
+}
+
+.summary{
+    margin-top:15px;
+    text-align:right;
+    color:#00ffff;
+    font-family:Orbitron, sans-serif;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    
+    <div class="student-info">
+        <h2>Name: Alvhin Charslsh R. Tirol</h2>
+        <p>Course: BSIT - 1C</p>
+        <p>Term: 1st Semester | A.Y. 2025-2026</p>
+    </div>
+
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Grade</th>
+                <th>Subject Code</th>
+                <th>Descriptive Title</th>
+                <th>Units</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><td>1.3</td><td>WEB</td><td>Web Development</td><td>3</td><td>Passed</td></tr>
+            <tr><td>1.8</td><td>GE3</td><td>Reading in Philippine History</td><td>3</td><td>Passed</td></tr>
+            <tr><td>1.9</td><td>GE4</td><td>Purposive Communication</td><td>3</td><td>Passed</td></tr>
+            <tr><td>1.7</td><td>PROG 2</td><td>Computer Programming 2</td><td>3</td><td>Passed</td></tr>
+            <tr><td>1.6</td><td>BASIC ELECT</td><td>Basic Electronic</td><td>3</td><td>Passed</td></tr>
+            <tr><td>1.8</td><td>PATHFIT 2</td><td>Exercise-Based Fitness Activities 3</td><td>2</td><td>Passed</td></tr>
+            <tr><td>1.7</td><td>NSTP 2</td><td>National Service Training Program 2</td><td>3</td><td>Passed</td></tr>
+            <tr><td>1.5</td><td>FIL2</td><td>Panitikan ng Pilipinas</td><td>3</td><td>Passed</td></tr>
+            <tr><td>1.4</td><td>DISCRETE 1</td><td>Discrete Structures</td><td>3</td><td>Passed</td></tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="3">Total Units</th>
+                <th>26</th>
+                <th></th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="summary">
+        Semester Average: 1.63
+        
+        <div class="student-info">
+        <h2>Name: Vince Justin I. Alferez</h2>
+        <p>Course: BSIT - 1C</p>
+        <p>Term: 1st Semester | A.Y. 2025-2026</p>
+    </div>
+
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Grade</th>
+                <th>Subject Code</th>
+                <th>Descriptive Title</th>
+                <th>Units</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><td>1.7</td><td>FIL1</td><td>Sining ng Komunikasyon</td><td>3</td><td>Passed</td></tr>
+            <tr><td>1.5</td><td>GE1</td><td>Mathematics in the Modern World</td><td>3</td><td>Passed</td></tr>
+            <tr><td>1.9</td><td>GE2</td><td>Understanding the Self</td><td>3</td><td>Passed</td></tr>
+            <tr><td>2.2</td><td>NSTP1</td><td>national Service Training Program 1</td><td>3</td><td>Passed</td></tr>
+            <tr><td>1.9</td><td>PATHFIT1</td><td>Movement Competency Training</td><td>2</td><td>Passed</td></tr>
+            <tr><td>1.6</td><td>PROG1</td><td>Computer Programming 1</td><td>3</td><td>Passed</td></tr>
+            <tr><td>1.6</td><td>OPT</td><td>Office Productivity Tools</td><td>3</td><td>Passed</td></tr>
+            <tr><td>1.8</td><td>MATH</td><td>Pre-Calculus for Non-STEM (Algebra and Trigo)</td><td>3</td><td>Passed</td></tr>
+            <tr><td>2.0</td><td>COMP1</td><td>Introduction to Computing</td><td>3</td><td>Passed</td></tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="3">Total Units</th>
+                <th>26</th>
+                <th></th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="summary">
+        Semester Average: 1.74
+    </div>
+
+</div>
+
+</body>
+</html>
